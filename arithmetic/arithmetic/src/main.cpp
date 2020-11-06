@@ -1,6 +1,4 @@
-#include "../include/common.h"
-#include <iostream>
-using namespace std;
+#include "../include/4IsPalindrome.h"
 
 int main()
 {
@@ -8,6 +6,7 @@ int main()
 	printf("%s\n", GetAuthor());
 	printf("%s\n", GetLanguage());
 
+	cout << IsPalindrome(121) << endl;
 
 	system("pause");
 	return 0;
