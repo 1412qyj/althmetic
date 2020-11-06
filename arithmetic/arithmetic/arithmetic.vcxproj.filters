@@ -18,12 +18,15 @@
     <ClInclude Include="include\common.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="include\2ExcelSheetColumnTitle.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\common.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\main.c">
+    <ClCompile Include="src\2ExcelSheetColumnTitle.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

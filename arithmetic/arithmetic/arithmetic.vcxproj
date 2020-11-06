@@ -11,11 +11,12 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="include\2ExcelSheetColumnTitle.h" />
     <ClInclude Include="include\common.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\2ExcelSheetColumnTitle.c" />
     <ClCompile Include="src\common.c" />
-    <ClCompile Include="src\main.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{E78909DB-9884-498C-822E-C855FAB82BBC}</ProjectGuid>
@@ -23,7 +24,7 @@
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v120</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
