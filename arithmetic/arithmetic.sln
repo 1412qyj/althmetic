@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "arithmetic", "arithmetic\arithmetic.vcxproj", "{E78909DB-9884-498C-822E-C855FAB82BBC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Test3", "Test3\Test3.vcxproj", "{FEB1E59A-058B-4716-9F9A-3ECB659B4182}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{E78909DB-9884-498C-822E-C855FAB82BBC}.Debug|Win32.Build.0 = Debug|Win32
 		{E78909DB-9884-498C-822E-C855FAB82BBC}.Release|Win32.ActiveCfg = Release|Win32
 		{E78909DB-9884-498C-822E-C855FAB82BBC}.Release|Win32.Build.0 = Release|Win32
+		{FEB1E59A-058B-4716-9F9A-3ECB659B4182}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FEB1E59A-058B-4716-9F9A-3ECB659B4182}.Debug|Win32.Build.0 = Debug|Win32
+		{FEB1E59A-058B-4716-9F9A-3ECB659B4182}.Release|Win32.ActiveCfg = Release|Win32
+		{FEB1E59A-058B-4716-9F9A-3ECB659B4182}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
