@@ -20,7 +20,8 @@ namespace Test2
 			input = GetPrivateProfileIntA("test", "input", 0, INI_PATH);
 			GetPrivateProfileStringA("test", "output", "", p_output, MAX_PATH, INI_PATH);
 			p_ret = ExcelSheetColumnTitle(input);
-			//Assert::AreEqual(p_output, p_ret);
+
+			Assert::AreEqual(0, strcmp(p_ret, p_output));
 
 			//free(p_ret);
 		}
