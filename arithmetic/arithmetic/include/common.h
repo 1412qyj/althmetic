@@ -5,8 +5,11 @@
 #include <string.h>
 #include <Windows.h>
 #include <math.h>
+#include <stdbool.h>
 //define
-#define INI_PATH "..\\config\\config.ini"
+
+#define INI_PATH "..\\arithmetic\\config\\config.ini"
+
 
 //common func
 char * GetLanguage();
