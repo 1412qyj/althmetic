@@ -15,7 +15,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\common.c" />
-    <ClCompile Include="src\main.c" />
+    <ClCompile Include="src\main.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{E78909DB-9884-498C-822E-C855FAB82BBC}</ProjectGuid>
