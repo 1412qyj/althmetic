@@ -7,7 +7,7 @@ bool ContainsNearbyDuplicate(int* nums, int numsSize, int k)
 
 	for (i = 0; i < numsSize; i++)
 	{
-		for(j = i; j < MIN(numsSize, i+k); j++)
+		for(j = i+1; j <= MIN(numsSize-1, i+k); j++)
 		{
 			if (nums[j] == nums[i])
 			{
