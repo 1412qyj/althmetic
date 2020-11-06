@@ -2,6 +2,8 @@
 #define __CONTAIN_NEARBY_DUPLICATE_H
 #include "common.h"
 
+#define MIN(a, b) ((a) < (b) ? (a) : (b)) 
+
 #ifdef __cplusplus
 extern "C" {
 #endif

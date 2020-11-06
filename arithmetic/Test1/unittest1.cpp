@@ -21,6 +21,7 @@ namespace Test1
 			char tmp[10];
 			int i = 0;
 			int cout = 0;
+			bool result;
 
 			GetPrivateProfileStringA("test1", "Array", "", p_array, MAX_PATH, INI_PATH);
 			GetPrivateProfileStringA("test1", "Key", "", p_key, MAX_PATH, INI_PATH);
@@ -39,16 +40,9 @@ namespace Test1
 				i++;
 			}
 
-			//test
-			if (!strncmp(p_output, "true", 4))
-			{
-				Assert::IsTrue(ContainsNearbyDuplicate(p_nums, cout, atoi(p_key)));
-			}
-			else
-			{
-				Assert::IsFalse(ContainsNearbyDuplicate(p_nums, cout, atoi(p_key)));
-			}
+			result = (strncmp(p_output, "true", 4) == 0) ? true : false;
 
+			Assert::AreEqual(result, ContainsNearbyDuplicate(p_nums, cout, atoi(p_key)));
 
 		}
 	};
