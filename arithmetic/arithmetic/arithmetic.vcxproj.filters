@@ -2,51 +2,11 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="头文件">
-      <UniqueIdentifier>{866d72fc-4070-4be2-89f6-9cdb645af1bb}</UniqueIdentifier>
+      <UniqueIdentifier>{5854ef6c-bfc6-4d8b-bdc3-b7306d9c1142}</UniqueIdentifier>
     </Filter>
     <Filter Include="源文件">
-      <UniqueIdentifier>{9ff0f66a-aa92-4724-bff0-feb90fe64755}</UniqueIdentifier>
+      <UniqueIdentifier>{63b18185-9e0d-416e-ac52-16af0bdd1441}</UniqueIdentifier>
     </Filter>
-    <Filter Include="资源文件">
-      <UniqueIdentifier>{387a5699-6060-44d7-bf54-8c8d795fd105}</UniqueIdentifier>
-    </Filter>
-  </ItemGroup>
-  <ItemGroup>
-<<<<<<< HEAD
-    <ClCompile Include="src\1ContainsNearbyDuplicate.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="src\2ExcelSheetColumnTitle.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="src\3IsUgly.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="src\4IsPalindrome.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="src\6ContainsDuplicate.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-=======
-    <ClInclude Include="include\common.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="include\5MinDepth.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
->>>>>>> test5
-    <ClCompile Include="src\common.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="src\main.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="src\5MinDepth.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\1ContainsNearbyDuplicate.h">
@@ -61,11 +21,40 @@
     <ClInclude Include="include\4IsPalindrome.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="include\5MinDepth.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
     <ClInclude Include="include\6ContainsDuplicate.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="include\common.h">
       <Filter>头文件</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\1ContainsNearbyDuplicate.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\2ExcelSheetColumnTitle.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\3IsUgly.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\4IsPalindrome.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\5MinDepth.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\6ContainsDuplicate.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
