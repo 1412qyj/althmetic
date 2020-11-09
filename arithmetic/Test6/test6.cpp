@@ -10,14 +10,14 @@ namespace Test6
 	{
 	public:
 		
-		TEST_METHOD(TestMethod1)
+		TEST_METHOD(Test6)
 		{
 			// TODO:  在此输入测试代码
 			LPSTR p_input = new char[MAX_PATH];
 			LPSTR p_output = new char[5];
 
-			GetPrivateProfileStringA("test", "Input", "", p_input, MAX_PATH, INI_PATH);
-			GetPrivateProfileStringA("test", "Output", "", p_output, 5, INI_PATH);
+			GetPrivateProfileStringA("test6", "Input", "", p_input, MAX_PATH, INI_PATH);
+			GetPrivateProfileStringA("test6", "Output", "", p_output, 5, INI_PATH);
 
 			stringstream sstr;
 			int inums[MAX_PATH];

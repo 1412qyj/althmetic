@@ -10,15 +10,15 @@ namespace Test2
 	{
 	public:
 		
-		TEST_METHOD(TestMethod1)
+		TEST_METHOD(Test2)
 		{
 			// TODO:  在此输入测试代码
 			int input = 0;
 			LPSTR p_output = new char[MAX_PATH];
 			char *p_ret = NULL;
 
-			input = GetPrivateProfileIntA("test", "input", 0, INI_PATH);
-			GetPrivateProfileStringA("test", "output", "", p_output, MAX_PATH, INI_PATH);
+			input = GetPrivateProfileIntA("test2", "input", 0, INI_PATH);
+			GetPrivateProfileStringA("test2", "output", "", p_output, MAX_PATH, INI_PATH);
 			p_ret = ExcelSheetColumnTitle(input);
 
 			Assert::AreEqual(0, strcmp(p_ret, p_output));

@@ -10,7 +10,7 @@ namespace Test1
 	{
 	public:
 		
-		TEST_METHOD(TestMethod1)
+		TEST_METHOD(Test1)
 		{
 			// TODO:  在此输入测试代码
 			LPSTR p_array = new char[MAX_PATH];

@@ -10,14 +10,14 @@ namespace Test4
 	{
 	public:
 		
-		TEST_METHOD(TestMethod1)
+		TEST_METHOD(Test4)
 		{
 			// TODO:  在此输入测试代码
-			int input = GetPrivateProfileIntA("test", "Input", 0, INI_PATH);
+			int input = GetPrivateProfileIntA("test4", "Input", 0, INI_PATH);
 
 			LPSTR p_output = new char[5];
 
-			GetPrivateProfileStringA("test", "Output", "", p_output, 5, INI_PATH);
+			GetPrivateProfileStringA("test4", "Output", "", p_output, 5, INI_PATH);
 
 			bool flag = (strncmp(p_output, "true", 4) == 0) ? true : false;
 

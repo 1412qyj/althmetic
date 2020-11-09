@@ -6,7 +6,13 @@
 #include <string.h>
 #include <Windows.h>
 #include <math.h>
+#include <stdbool.h>
 
+//c++
+#include <iostream>
+#include <string>
+#include <cmath>
+using namespace std;
 
 //define
 #define INI_PATH "..\\arithmetic\\config\\config.ini"

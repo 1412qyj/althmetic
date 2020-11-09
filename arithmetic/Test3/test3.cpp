@@ -10,15 +10,15 @@ namespace Test3
 	{
 	public:
 		
-		TEST_METHOD(TestMethod1)
+		TEST_METHOD(Test3)
 		{
 			// TODO:  在此输入测试代码
 			int input = 0;
 			LPSTR p_output = new char[MAX_PATH];
 			bool flag;
 
-			input = GetPrivateProfileIntA("test", "input", 6, INI_PATH);
-			GetPrivateProfileStringA("test", "output", "", p_output, MAX_PATH, INI_PATH);
+			input = GetPrivateProfileIntA("test3", "input", 6, INI_PATH);
+			GetPrivateProfileStringA("test3", "output", "", p_output, MAX_PATH, INI_PATH);
 
 			flag = (strncmp(p_output, "true", 4) == 0) ? true : false;
 
