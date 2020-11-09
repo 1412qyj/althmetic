@@ -1,6 +1,4 @@
-#include "../include/common.h"
-#include <iostream>
-using namespace std;
+#include "../include/6ContainsDuplicate.h"
 
 int main()
 {
@@ -8,6 +6,9 @@ int main()
 	printf("%s\n", GetAuthor());
 	printf("%s\n", GetLanguage());
 
+	
+
+	
 
 	system("pause");
 	return 0;
