@@ -8,6 +8,7 @@
   <ItemGroup>
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     <ClInclude Include="include\common.h">
       <Filter>头文件</Filter>
     </ClInclude>
@@ -62,6 +63,15 @@
 >>>>>>> test6
       <Filter>源文件</Filter>
     </ClCompile>
+=======
+    <ClInclude Include="include\1ContainsNearbyDuplicate.h" />
+    <ClInclude Include="include\common.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{b7b63ef5-f3c6-4106-96db-aa41e81edd07}</UniqueIdentifier>
+    </Filter>
+>>>>>>> Stashed changes
 =======
     <ClInclude Include="include\1ContainsNearbyDuplicate.h" />
     <ClInclude Include="include\common.h" />
