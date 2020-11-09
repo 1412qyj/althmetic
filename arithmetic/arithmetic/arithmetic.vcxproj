@@ -11,45 +11,13 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     <ClInclude Include="include\1ContainsNearbyDuplicate.h" />
     <ClInclude Include="include\common.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\1ContainsNearbyDuplicate.c" />
-=======
-    <ClInclude Include="include\2ExcelSheetColumnTitle.h" />
-    <ClInclude Include="include\common.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="src\2ExcelSheetColumnTitle.c" />
->>>>>>> test2
-=======
-    <ClInclude Include="include\3IsUgly.h" />
-    <ClInclude Include="include\common.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="src\3IsUgly.cpp" />
->>>>>>> test3
-=======
-    <ClInclude Include="include\4IsPalindrome.h" />
-    <ClInclude Include="include\common.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="src\4IsPalindrome.cpp" />
->>>>>>> test4
-=======
-    <ClInclude Include="include\6ContainsDuplicate.h" />
-    <ClInclude Include="include\common.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="src\6ContainsDuplicate.cpp" />
->>>>>>> test6
     <ClCompile Include="src\common.c" />
-    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\main.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{E78909DB-9884-498C-822E-C855FAB82BBC}</ProjectGuid>
