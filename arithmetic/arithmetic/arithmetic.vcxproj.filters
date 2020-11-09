@@ -12,6 +12,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <ClCompile Include="src\1ContainsNearbyDuplicate.c">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -27,10 +28,23 @@
     <ClCompile Include="src\6ContainsDuplicate.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+=======
+    <ClInclude Include="include\common.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\5MinDepth.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+>>>>>>> test5
     <ClCompile Include="src\common.c">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="src\main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\5MinDepth.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

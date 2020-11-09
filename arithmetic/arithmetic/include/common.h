@@ -6,12 +6,16 @@
 #include <string.h>
 #include <Windows.h>
 #include <math.h>
+
 #include <stdbool.h>
 
 //c++
 #include <iostream>
 #include <string>
 #include <cmath>
+=======
+
+#include <iostream>
 using namespace std;
 
 //define
