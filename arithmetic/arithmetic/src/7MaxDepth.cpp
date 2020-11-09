@@ -5,7 +5,7 @@ int MaxDepth(TreeNode* root)
 	int maxl = 0;
 	int maxr = 0;
 
-	if (root != nullptr)
+	if (root == nullptr)
 	{
 		return 0;
 	}
@@ -47,14 +47,3 @@ TreeNode * CreateTree(int *data, int index, int size)
 	return nullptr;
 }
 
-void printTree(TreeNode *p_tree)
-{
-	if (p_tree != nullptr)
-	{
-		cout << p_tree->val << endl;
-
-		printTree(p_tree->left);
-
-		printTree(p_tree->right);
-	}
-}
