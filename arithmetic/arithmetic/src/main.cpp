@@ -1,24 +1,14 @@
-<<<<<<< HEAD:arithmetic/arithmetic/src/main.cpp
-#include "../include/common.h"
-#include "../include/1ContainsNearbyDuplicate.h"
-=======
-#include "../include/2ExcelSheetColumnTitle.h"
-
->>>>>>> test2:arithmetic/arithmetic/src/main.c
+#include <iostream>
+#include "../include/3IsUgly.h"
+using namespace std;
 int main()
 {
-	char *p_ret = NULL;
+	//print Author and Language
+	printf("%s\n", GetAuthor());
+	printf("%s\n", GetLanguage());
 
-<<<<<<< HEAD:arithmetic/arithmetic/src/main.cpp
-	int nums[5] = {1, 2, 3, 0, 1};
-	int key = 3;
+	cout << IsUgly(6) << endl;
 
-	printf("%d\n", ContainsNearbyDuplicate(nums, 5, key));
-=======
-	printf("%s\n", ExcelSheetColumnTitle(1));
-
-	
->>>>>>> test2:arithmetic/arithmetic/src/main.c
 	system("pause");
 	return 0;
 }

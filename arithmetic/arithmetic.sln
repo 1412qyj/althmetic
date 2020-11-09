@@ -6,10 +6,14 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "arithmetic", "arithmetic\arithmetic.vcxproj", "{E78909DB-9884-498C-822E-C855FAB82BBC}"
 EndProject
 <<<<<<< HEAD
+<<<<<<< HEAD
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Test1", "Test1\Test1.vcxproj", "{813541C0-90EB-4066-91FA-3A44A627562F}"
 =======
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Test2", "Test2\Test2.vcxproj", "{9570491C-0E13-4986-AE42-F9CC1C23BA46}"
 >>>>>>> test2
+=======
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Test3", "Test3\Test3.vcxproj", "{FEB1E59A-058B-4716-9F9A-3ECB659B4182}"
+>>>>>>> test3
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -22,6 +26,7 @@ Global
 		{E78909DB-9884-498C-822E-C855FAB82BBC}.Release|Win32.ActiveCfg = Release|Win32
 		{E78909DB-9884-498C-822E-C855FAB82BBC}.Release|Win32.Build.0 = Release|Win32
 <<<<<<< HEAD
+<<<<<<< HEAD
 		{813541C0-90EB-4066-91FA-3A44A627562F}.Debug|Win32.ActiveCfg = Debug|Win32
 		{813541C0-90EB-4066-91FA-3A44A627562F}.Debug|Win32.Build.0 = Debug|Win32
 		{813541C0-90EB-4066-91FA-3A44A627562F}.Release|Win32.ActiveCfg = Release|Win32
@@ -32,6 +37,12 @@ Global
 		{9570491C-0E13-4986-AE42-F9CC1C23BA46}.Release|Win32.ActiveCfg = Release|Win32
 		{9570491C-0E13-4986-AE42-F9CC1C23BA46}.Release|Win32.Build.0 = Release|Win32
 >>>>>>> test2
+=======
+		{FEB1E59A-058B-4716-9F9A-3ECB659B4182}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FEB1E59A-058B-4716-9F9A-3ECB659B4182}.Debug|Win32.Build.0 = Debug|Win32
+		{FEB1E59A-058B-4716-9F9A-3ECB659B4182}.Release|Win32.ActiveCfg = Release|Win32
+		{FEB1E59A-058B-4716-9F9A-3ECB659B4182}.Release|Win32.Build.0 = Release|Win32
+>>>>>>> test3
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
