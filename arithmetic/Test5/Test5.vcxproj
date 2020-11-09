@@ -11,7 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{B896EBBB-5E84-497D-9AEF-454680482F82}</ProjectGuid>
+    <ProjectGuid>{765EEAF2-BC3F-48BD-AA76-C1C22EC0545F}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>Test5</RootNamespace>
   </PropertyGroup>
@@ -60,7 +60,7 @@
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>$(VCInstallDir)UnitTest\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>../arithmetic/Debug/5MinDepth.h;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>../arithmetic/Debug/5MinDepth.obj;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -91,7 +91,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="unitest1.cpp" />
+    <ClCompile Include="test5.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

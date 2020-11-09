@@ -5,6 +5,10 @@
 #include <string.h>
 #include <Windows.h>
 #include <math.h>
+
+#include <iostream>
+using namespace std;
+
 //define
 #define INI_PATH "..\\arithmetic\\config\\config.ini"
 
