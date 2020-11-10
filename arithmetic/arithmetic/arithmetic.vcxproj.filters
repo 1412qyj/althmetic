@@ -39,6 +39,9 @@
     <ClInclude Include="include\9AddBinary.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="include\11CanWinNim.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\1ContainsNearbyDuplicate.c">
@@ -72,6 +75,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="src\9AddBinary.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\11CanWinNim.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
