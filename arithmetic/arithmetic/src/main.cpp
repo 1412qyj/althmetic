@@ -5,6 +5,7 @@
 
 #ifdef DEBUG
 #include "../include/12IsValid.h"
+#include "../include/13MyAtoi.h"
 #endif
 
 using namespace std;
@@ -13,7 +14,11 @@ int main()
 {
 
 #ifdef DEBUG
-	cout << IsValid("{}]]") << endl;
+	//cout << IsValid("{}]]") << endl;
+	
+	int i = MyAtoi("-91283472332");
+
+	cout << i << endl;
 
 
 #endif
