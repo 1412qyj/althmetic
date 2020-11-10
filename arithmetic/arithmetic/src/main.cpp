@@ -1,11 +1,22 @@
 #include <iostream>
 #include <Windows.h>
-#include "../include/11CanWinNim.h"
+
+#define DEBUG
+
+#ifdef DEBUG
+#include "../include/12IsValid.h"
+#endif
+
 using namespace std;
 
 int main()
 {
-	cout << CanWinNim(8) << endl;
+
+#ifdef DEBUG
+	cout << IsValid("{}]]") << endl;
+
+
+#endif
 
 	system("pause");
 	return 0;
