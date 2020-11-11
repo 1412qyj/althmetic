@@ -7,4 +7,6 @@ int SingleNumber(vector<int>& nums)
 		if( find(nums.begin()+i+1, nums.end(), nums[i]) == nums.end())
 			return nums[i];
 	}
+
+	return INT_MAX;
 }

@@ -51,6 +51,9 @@
     <ClInclude Include="include\14SingleNumber.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="include\15WordPattern.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\1ContainsNearbyDuplicate.c">
@@ -96,6 +99,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="src\14SingleNumber.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\15WordPattern.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
