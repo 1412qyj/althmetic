@@ -8,5 +8,5 @@ char *GetAuthor()
 
 char * GetLanguage()
 {
-	return "C";
+	return "CPP";
 }
