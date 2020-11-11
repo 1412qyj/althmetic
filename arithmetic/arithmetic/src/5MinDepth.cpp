@@ -4,24 +4,23 @@ int MinDepth(TreeNode* root)
 {
 	int ret = 0;
 
-	if (root == nullptr)
+	if (root->left == nullptr && root->right != nullptr)
 	{
-		ret = 0;
-	}
-
-	else if (root->left == nullptr && root->right != nullptr)
-	{
-		ret = MinDepth(root->right) + 1;
+		ret = MinDepth(root->right)+1;
 	}
 
 	else if (root->right == nullptr && root->left != nullptr)
 	{
-		ret = MinDepth(root->left);
+		ret = MinDepth(root->left)+1;
 	}
 
 	else if (root->left != nullptr && root->right != nullptr)
 	{
-		ret = MIN(MinDepth(root->right), MinDepth(root->left)) +1;
+		ret = MIN(MinDepth(root->right), MinDepth(root->left)) + 1;
+	}
+	else if (root->left == nullptr && root->right == nullptr)
+	{
+		ret = 1;
 	}
 
 	return ret;
@@ -33,14 +32,12 @@ TreeNode * CreateTree(int *data, int index, int size)
 {
 	TreeNode *pnode = nullptr;
 
-	if (index < size)
+	if (index > size || data[index] == -1)
+		return nullptr;
+
+	else
 	{
 		pnode = (TreeNode *)malloc(sizeof(TreeNode));
-		if (nullptr == pnode)
-		{
-			perror("malloc");
-			return NULL;
-		}
 
 		pnode->val = data[index];
 		pnode->left = CreateTree(data, 2 * index + 1, size);

@@ -11,6 +11,8 @@ bool IsPalindrome(int x)
 
 	string str_back = str;
 
+	reverse(str_back.begin(), str_back.end());
+
 	if (!strcmp(str.c_str(), str_back.c_str()))
 		return true;
 	else

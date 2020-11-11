@@ -13,6 +13,7 @@ namespace Test2
 		TEST_METHOD(Test2)
 		{
 			// TODO:  在此输入测试代码
+			//测试一
 			int input = 0;
 			LPSTR p_output = new char[MAX_PATH];
 			char *p_ret = NULL;
@@ -22,6 +23,17 @@ namespace Test2
 			p_ret = ExcelSheetColumnTitle(input);
 
 			Assert::AreEqual(0, strcmp(p_ret, p_output));
+			free(p_ret);
+			p_ret = NULL;
+
+			//测试二
+			LPSTR p_output1 = new char[MAX_PATH];
+
+			int input1 = GetPrivateProfileIntA("test2", "Input1", 0, INI_PATH);
+			GetPrivateProfileStringA("test2", "Output1", "", p_output1, MAX_PATH, INI_PATH);
+			p_ret = ExcelSheetColumnTitle(input1);
+
+			Assert::AreEqual(0, strcmp(p_ret, p_output1));
 
 			//free(p_ret);
 		}

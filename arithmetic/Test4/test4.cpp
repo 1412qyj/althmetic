@@ -23,6 +23,15 @@ namespace Test4
 
 			Assert::AreEqual(flag, IsPalindrome(input));
 
+			//==================================
+
+			input = GetPrivateProfileIntA("test4", "Input1", 0, INI_PATH);
+			GetPrivateProfileStringA("test4", "Output1", "", p_output, 5, INI_PATH);
+
+			flag = (strncmp(p_output, "true", 4) == 0) ? true : false;
+
+			Assert::AreEqual(flag, IsPalindrome(input));
+
 
 		}
 
