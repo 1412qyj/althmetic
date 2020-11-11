@@ -48,6 +48,9 @@
     <ClInclude Include="include\13MyAtoi.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="include\14SingleNumber.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\1ContainsNearbyDuplicate.c">
@@ -90,6 +93,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="src\13MyAtoi.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\14SingleNumber.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
