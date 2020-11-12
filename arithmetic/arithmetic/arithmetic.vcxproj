@@ -24,6 +24,7 @@
     <ClInclude Include="include\20MoveZeroes.h" />
     <ClInclude Include="include\21Reverse.h" />
     <ClInclude Include="include\22Rotate.h" />
+    <ClInclude Include="include\23RestoreIpAddresses.h" />
     <ClInclude Include="include\2ExcelSheetColumnTitle.h" />
     <ClInclude Include="include\3IsUgly.h" />
     <ClInclude Include="include\4IsPalindrome.h" />
@@ -47,6 +48,7 @@
     <ClCompile Include="src\20MoveZeroes.cpp" />
     <ClCompile Include="src\21Reverse.cpp" />
     <ClCompile Include="src\22Rotate.cpp" />
+    <ClCompile Include="src\23RestoreIpAddresses.cpp" />
     <ClCompile Include="src\2ExcelSheetColumnTitle.c" />
     <ClCompile Include="src\3IsUgly.cpp" />
     <ClCompile Include="src\4IsPalindrome.cpp" />
