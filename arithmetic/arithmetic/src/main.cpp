@@ -9,6 +9,7 @@
 #include "../include/18PlusOne.h"
 #include "../include/20MoveZeroes.h"
 #include "../include/23RestoreIpAddresses.h"
+#include "../include/24LengthOfLongestSubstring.h"
 
 #endif
 
@@ -18,12 +19,10 @@ int main()
 {
 
 #ifdef DEBUG
-	string s("25525511135");
+	cout << LengthOfLongestSubstring("abcdabcabc") << endl; 
 
-	vector<string> vec = RestoreIpAddresses(s);
-
-	for (vector<string>::iterator iter = vec.begin(); iter != vec.end(); iter++)
-		cout << *iter << endl;
+	/*for (vector<string>::iterator iter = vec.begin(); iter != vec.end(); iter++)
+		cout << *iter << endl;*/
 
 #endif
 
