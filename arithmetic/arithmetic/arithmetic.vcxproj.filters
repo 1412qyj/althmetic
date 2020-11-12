@@ -63,6 +63,9 @@
     <ClInclude Include="include\18PlusOne.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="include\19MySqrt.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\1ContainsNearbyDuplicate.c">
@@ -120,6 +123,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="src\18PlusOne.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\19MySqrt.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
