@@ -27,6 +27,7 @@
     <ClCompile Include="src\22Rotate.cpp" />
     <ClCompile Include="src\23RestoreIpAddresses.cpp" />
     <ClCompile Include="src\24LengthOfLongestSubstring.cpp" />
+    <ClCompile Include="src\25Partition.cpp" />
     <ClCompile Include="src\2ExcelSheetColumnTitle.c" />
     <ClCompile Include="src\3IsUgly.cpp" />
     <ClCompile Include="src\4IsPalindrome.cpp" />
@@ -55,6 +56,7 @@
     <ClInclude Include="include\22Rotate.h" />
     <ClInclude Include="include\23RestoreIpAddresses.h" />
     <ClInclude Include="include\24LengthOfLongestSubstring.h" />
+    <ClInclude Include="include\25Partition.h" />
     <ClInclude Include="include\2ExcelSheetColumnTitle.h" />
     <ClInclude Include="include\3IsUgly.h" />
     <ClInclude Include="include\4IsPalindrome.h" />
