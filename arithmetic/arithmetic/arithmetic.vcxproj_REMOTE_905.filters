@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{5854ef6c-bfc6-4d8b-bdc3-b7306d9c1142}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{63b18185-9e0d-416e-ac52-16af0bdd1441}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\1ContainsNearbyDuplicate.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\2ExcelSheetColumnTitle.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\3IsUgly.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\4IsPalindrome.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\5MinDepth.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\6ContainsDuplicate.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\common.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\7MaxDepth.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\8HammingWeight.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\9AddBinary.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\11CanWinNim.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\12IsValid.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\13MyAtoi.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\14SingleNumber.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\15WordPattern.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\16ReverseBits.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\17WordBreak.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\18PlusOne.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\19MySqrt.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\20MoveZeroes.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\21Reverse.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\22Rotate.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\23RestoreIpAddresses.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\24LengthOfLongestSubstring.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\25Partition.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\1ContainsNearbyDuplicate.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\2ExcelSheetColumnTitle.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\3IsUgly.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\4IsPalindrome.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\5MinDepth.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\6ContainsDuplicate.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\7MaxDepth.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\8HammingWeight.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\9AddBinary.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\11CanWinNim.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\12IsValid.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\13MyAtoi.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\14SingleNumber.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\15WordPattern.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\16ReverseBits.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\17WordBreak.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\18PlusOne.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\19MySqrt.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\20MoveZeroes.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\21Reverse.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\22Rotate.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\23RestoreIpAddresses.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\24LengthOfLongestSubstring.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\25Partition.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
