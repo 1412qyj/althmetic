@@ -11,34 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-	<ClInclude Include="include\10BinaryTreePaths.h" />
-    <ClInclude Include="include\11CanWinNim.h" />
-    <ClInclude Include="include\12IsValid.h" />
-    <ClInclude Include="include\13MyAtoi.h" />
-    <ClInclude Include="include\14SingleNumber.h" />
-    <ClInclude Include="include\15WordPattern.h" />
-    <ClInclude Include="include\16ReverseBits.h" />
-    <ClInclude Include="include\17WordBreak.h" />
-    <ClInclude Include="include\18PlusOne.h" />
-    <ClInclude Include="include\19MySqrt.h" />
-    <ClInclude Include="include\1ContainsNearbyDuplicate.h" />
-    <ClInclude Include="include\20MoveZeroes.h" />
-    <ClInclude Include="include\21Reverse.h" />
-    <ClInclude Include="include\22Rotate.h" />
-    <ClInclude Include="include\23RestoreIpAddresses.h" />
-    <ClInclude Include="include\24LengthOfLongestSubstring.h" />
-    <ClInclude Include="include\2ExcelSheetColumnTitle.h" />
-    <ClInclude Include="include\3IsUgly.h" />
-    <ClInclude Include="include\4IsPalindrome.h" />
-    <ClInclude Include="include\5MinDepth.h" />
-    <ClInclude Include="include\6ContainsDuplicate.h" />
-	<ClInclude Include="include\7MaxDepth.h" />
-    <ClInclude Include="include\8HammingWeight.h" />
-    <ClInclude Include="include\9AddBinary.h" />
-    <ClInclude Include="include\common.h" />
-  </ItemGroup>
-  <ItemGroup>
-	<ClCompile Include="src\10BinaryTreePaths.cpp" />
+    <ClCompile Include="src\10BinaryTreePaths.cpp" />
     <ClCompile Include="src\11CanWinNim.cpp" />
     <ClCompile Include="src\12IsValid.cpp" />
     <ClCompile Include="src\13MyAtoi.cpp" />
@@ -64,6 +37,33 @@
     <ClCompile Include="src\9AddBinary.cpp" />
     <ClCompile Include="src\common.c" />
     <ClCompile Include="src\main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\10BinaryTreePaths.h" />
+    <ClInclude Include="include\11CanWinNim.h" />
+    <ClInclude Include="include\12IsValid.h" />
+    <ClInclude Include="include\13MyAtoi.h" />
+    <ClInclude Include="include\14SingleNumber.h" />
+    <ClInclude Include="include\15WordPattern.h" />
+    <ClInclude Include="include\16ReverseBits.h" />
+    <ClInclude Include="include\17WordBreak.h" />
+    <ClInclude Include="include\18PlusOne.h" />
+    <ClInclude Include="include\19MySqrt.h" />
+    <ClInclude Include="include\1ContainsNearbyDuplicate.h" />
+    <ClInclude Include="include\20MoveZeroes.h" />
+    <ClInclude Include="include\21Reverse.h" />
+    <ClInclude Include="include\22Rotate.h" />
+    <ClInclude Include="include\23RestoreIpAddresses.h" />
+    <ClInclude Include="include\24LengthOfLongestSubstring.h" />
+    <ClInclude Include="include\2ExcelSheetColumnTitle.h" />
+    <ClInclude Include="include\3IsUgly.h" />
+    <ClInclude Include="include\4IsPalindrome.h" />
+    <ClInclude Include="include\5MinDepth.h" />
+    <ClInclude Include="include\6ContainsDuplicate.h" />
+    <ClInclude Include="include\7MaxDepth.h" />
+    <ClInclude Include="include\8HammingWeight.h" />
+    <ClInclude Include="include\9AddBinary.h" />
+    <ClInclude Include="include\common.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{E78909DB-9884-498C-822E-C855FAB82BBC}</ProjectGuid>
