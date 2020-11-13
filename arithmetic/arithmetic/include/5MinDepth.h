@@ -14,7 +14,7 @@ struct TreeNode
 };
 
 int MinDepth(TreeNode* root);
-static TreeNode * CreateTree(int *data, int index, int size);
+TreeNode * CreateTree5(int *data, int index, int size);
 
 #ifdef PRINT
 void prinTree(TreeNode *p_tree);

@@ -39,7 +39,7 @@ namespace Test5
 				i++;
 			}
 
-			TreeNode *p_tree = CreateTree(inums, 0, i);
+			TreeNode *p_tree = CreateTree5(inums, 0, i);
 
 			Assert::AreEqual(ioutput, MinDepth(p_tree));
 
@@ -69,7 +69,7 @@ namespace Test5
 
 			//p_tree = CreateTree(inums, 0, i);
 			int array[] = { 1, 2, 4, -1, 3, 5, -1, -1, -1, -1, -1 };
-			p_tree = CreateTree(array, 0, sizeof(array)/ sizeof(int));
+			p_tree = CreateTree5(array, 0, sizeof(array)/ sizeof(int));
 			Assert::AreEqual(ioutput, MinDepth(p_tree));
 
 

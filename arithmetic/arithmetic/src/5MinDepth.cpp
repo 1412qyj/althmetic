@@ -28,7 +28,7 @@ int MinDepth(TreeNode* root)
 }
 
 
-static TreeNode * CreateTree(int *data, int index, int size)
+TreeNode * CreateTree5(int *data, int index, int size)
 {
 	TreeNode *pnode = nullptr;
 
@@ -40,8 +40,8 @@ static TreeNode * CreateTree(int *data, int index, int size)
 		pnode = (TreeNode *)malloc(sizeof(TreeNode));
 
 		pnode->val = data[index];
-		pnode->left = CreateTree(data, 2 * index + 1, size);
-		pnode->right = CreateTree(data, 2 * index + 2, size);
+		pnode->left = CreateTree5(data, 2 * index + 1, size);
+		pnode->right = CreateTree5(data, 2 * index + 2, size);
 	}
 
 	return pnode;

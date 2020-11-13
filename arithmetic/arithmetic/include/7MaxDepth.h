@@ -12,17 +12,10 @@ struct TreeNode
 	struct TreeNode *right;
 };
 
-#ifdef __cplusplus
-extern "C" {
-#endif
-
 	int MaxDepth(TreeNode*);
-	static TreeNode * CreateTree(int *data, int index, int size);
+	TreeNode * CreateTree7(int *data, int index, int size);
 
 
-#ifdef __cplusplus
-}
-#endif
 
 
 #endif
