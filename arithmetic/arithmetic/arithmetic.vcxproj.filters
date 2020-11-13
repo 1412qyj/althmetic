@@ -81,6 +81,9 @@
     <ClInclude Include="include\24LengthOfLongestSubstring.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="include\25Partition.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\1ContainsNearbyDuplicate.c">
@@ -156,6 +159,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="src\24LengthOfLongestSubstring.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\25Partition.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
