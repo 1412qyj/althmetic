@@ -19,7 +19,7 @@ int MaxDepth(TreeNode* root)
 	return (maxl > maxr) ? (maxl+1) : (maxr+1);
 }
 
-TreeNode * CreateTree(int *data, int index, int size)
+static TreeNode * CreateTree(int *data, int index, int size)
 {
 	TreeNode *pnode = nullptr;
 

@@ -28,7 +28,7 @@ int MinDepth(TreeNode* root)
 }
 
 
-TreeNode * CreateTree(int *data, int index, int size)
+static TreeNode * CreateTree(int *data, int index, int size)
 {
 	TreeNode *pnode = nullptr;
 

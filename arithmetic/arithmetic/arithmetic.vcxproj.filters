@@ -79,6 +79,7 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="include\24LengthOfLongestSubstring.h">
+    <ClInclude Include="include\10BinaryTreePaths.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
@@ -156,6 +157,7 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="src\24LengthOfLongestSubstring.cpp">
+    <ClCompile Include="src\10BinaryTreePaths.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

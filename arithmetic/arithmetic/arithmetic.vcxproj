@@ -11,6 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+	<ClInclude Include="include\10BinaryTreePaths.h" />
     <ClInclude Include="include\11CanWinNim.h" />
     <ClInclude Include="include\12IsValid.h" />
     <ClInclude Include="include\13MyAtoi.h" />
@@ -31,11 +32,13 @@
     <ClInclude Include="include\4IsPalindrome.h" />
     <ClInclude Include="include\5MinDepth.h" />
     <ClInclude Include="include\6ContainsDuplicate.h" />
+	<ClInclude Include="include\7MaxDepth.h" />
     <ClInclude Include="include\8HammingWeight.h" />
     <ClInclude Include="include\9AddBinary.h" />
     <ClInclude Include="include\common.h" />
   </ItemGroup>
   <ItemGroup>
+	<ClCompile Include="src\10BinaryTreePaths.cpp" />
     <ClCompile Include="src\11CanWinNim.cpp" />
     <ClCompile Include="src\12IsValid.cpp" />
     <ClCompile Include="src\13MyAtoi.cpp" />
@@ -56,9 +59,6 @@
     <ClCompile Include="src\4IsPalindrome.cpp" />
     <ClCompile Include="src\5MinDepth.cpp" />
     <ClCompile Include="src\6ContainsDuplicate.cpp" />
-    <ClInclude Include="include\7MaxDepth.h" />
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="src\7MaxDepth.cpp" />
     <ClCompile Include="src\8HammingWeight.cpp" />
     <ClCompile Include="src\9AddBinary.cpp" />
