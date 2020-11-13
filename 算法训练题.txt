@@ -68,7 +68,7 @@ Output = true
 最小深度是从根节点到最近叶子节点的最短路径上的节点数量。
 
 [接口]
-CPP:int MinDepth(TreeNode* root)
+CPP:int MinDepth(TreeNode* root)	
 C:int MinDepth(struct TreeNode* root)
 
 struct TreeNode 

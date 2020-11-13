@@ -17,7 +17,7 @@ extern "C" {
 #endif
 
 	int MaxDepth(TreeNode*);
-	TreeNode * CreateTree(int *data, int index, int size);
+	static TreeNode * CreateTree(int *data, int index, int size);
 
 
 #ifdef __cplusplus

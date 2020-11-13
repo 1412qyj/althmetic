@@ -1,17 +1,23 @@
 #include <iostream>
 #include <Windows.h>
-#include "../include/9AddBinary.h"
+#include <sstream>
 using namespace std;
 
 int main()
 {
-	cout <<  AddBinary("110", "111") << endl;
+	int i = 1;
 
-	string s1("110");
-	string s2("111");
+	stringstream sstr;
 
+	sstr << i;
 
-	cout << s1.at(2) + s2.at(2) << endl;
+	string s1 = "";
+
+	s1 += sstr.str();
+	
+	
+
+	cout << s1 << endl;
 
 	system("pause");
 	return 0;

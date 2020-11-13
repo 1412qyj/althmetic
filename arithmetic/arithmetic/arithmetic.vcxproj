@@ -11,6 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="include\10BinaryTreePaths.h" />
     <ClInclude Include="include\1ContainsNearbyDuplicate.h" />
     <ClInclude Include="include\2ExcelSheetColumnTitle.h" />
     <ClInclude Include="include\3IsUgly.h" />
@@ -22,6 +23,7 @@
     <ClInclude Include="include\common.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\10BinaryTreePaths.cpp" />
     <ClCompile Include="src\1ContainsNearbyDuplicate.c" />
     <ClCompile Include="src\2ExcelSheetColumnTitle.c" />
     <ClCompile Include="src\3IsUgly.cpp" />
