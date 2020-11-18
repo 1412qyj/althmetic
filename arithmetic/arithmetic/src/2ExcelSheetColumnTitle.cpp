@@ -1,6 +1,8 @@
 #include "../include/2ExcelSheetColumnTitle.h"
 
-DLL_EXPORT char * ExcelSheetColumnTitle(int n)
+#if 0
+
+char * ExcelSheetColumnTitle(int n)
 {
 	int numA = 0;
 	int numLast = 0;
@@ -27,4 +29,22 @@ DLL_EXPORT char * ExcelSheetColumnTitle(int n)
 	p_ret[i] = '\0';
 
 	return p_ret;
+}
+
+#endif
+
+string ExcelSheetColumnTitle(int n)
+{
+	string strRet;
+
+	while (n > 26)
+	{
+		strRet += "A";
+
+		n = n - 26;
+	}
+
+	strRet.append(1, (( n == 0 )? ('/0'): ('A' + n - 1)));
+
+	return strRet;
 }

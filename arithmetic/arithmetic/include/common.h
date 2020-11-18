@@ -8,7 +8,6 @@
 #include <math.h>
 #include <stdint.h>
 
-#include <stdbool.h>
 
 //c++
 #include <iostream>
@@ -17,9 +16,11 @@
 #include <sstream>
 #include <limits.h>
 #include <cmath>
-#include <iostream>
 #include <vector>
 #include <set>
+#include <algorithm>
+#include <map>
+#include <unordered_map>
 using namespace std;
 
 //define

@@ -2,10 +2,5 @@
 
 bool ContainsDuplicate(vector<int>& nums)
 {
-	set<int> set_nums(nums.begin(), nums.end());
-
-	if (nums.size() != set_nums.size())
-		return true;
-	
-	return false;
+	return (nums.size() > set<int>(nums.begin(), nums.end()).size());
 }

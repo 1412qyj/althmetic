@@ -21,14 +21,14 @@
     <ClCompile Include="src\17WordBreak.cpp" />
     <ClCompile Include="src\18PlusOne.cpp" />
     <ClCompile Include="src\19MySqrt.cpp" />
-    <ClCompile Include="src\1ContainsNearbyDuplicate.c" />
+    <ClCompile Include="src\1ContainsNearbyDuplicate.cpp" />
     <ClCompile Include="src\20MoveZeroes.cpp" />
     <ClCompile Include="src\21Reverse.cpp" />
     <ClCompile Include="src\22Rotate.cpp" />
     <ClCompile Include="src\23RestoreIpAddresses.cpp" />
     <ClCompile Include="src\24LengthOfLongestSubstring.cpp" />
     <ClCompile Include="src\25Partition.cpp" />
-    <ClCompile Include="src\2ExcelSheetColumnTitle.c" />
+    <ClCompile Include="src\2ExcelSheetColumnTitle.cpp" />
     <ClCompile Include="src\3IsUgly.cpp" />
     <ClCompile Include="src\4IsPalindrome.cpp" />
     <ClCompile Include="src\5MinDepth.cpp" />
@@ -102,6 +102,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <CompileAs>CompileAsCpp</CompileAs>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>

@@ -4,13 +4,8 @@
 
 #define MIN(a, b) ((a) < (b) ? (a) : (b)) 
 
-#ifdef __cplusplus
-extern "C" {
-#endif
-	bool ContainsNearbyDuplicate(int* nums, int numsSize, int k);
+bool ContainsNearbyDuplicate(vector<int>& nums, int k);
 
-#ifdef __cplusplus
-}
-#endif
+
 
 #endif

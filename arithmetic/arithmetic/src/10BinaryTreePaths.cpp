@@ -5,9 +5,10 @@ vector<string> BinaryTreePaths(TreeNode* root)
 	vector<string> vec_paths;
 	vector<string> vec_l, vec_r;
 	string node = "";
-	stringstream sstr;
-	sstr << root->val;
-	node += sstr.str();
+	char val[12] = {'\0'};
+	sprintf(val, "%d", root->val);
+	node += val;
+
 	int size = node.size();
 	vector<string>::iterator iter;
 

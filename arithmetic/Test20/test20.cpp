@@ -44,6 +44,18 @@ namespace Test20
 				b_result = true;
 
 			Assert::IsTrue(b_result);
+
+			vec_in.clear();
+			vec_out.clear();
+
+			MoveZeroes(vec_in);
+
+			if (vec_in == vec_out)
+				b_result = true;
+			else
+				b_result = false;
+
+			Assert::IsTrue(b_result);
 		}
 
 	};

@@ -9,12 +9,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\1ContainsNearbyDuplicate.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="src\2ExcelSheetColumnTitle.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="src\3IsUgly.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -88,6 +82,12 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="src\25Partition.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\2ExcelSheetColumnTitle.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\1ContainsNearbyDuplicate.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

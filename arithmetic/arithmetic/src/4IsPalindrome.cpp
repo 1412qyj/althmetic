@@ -1,5 +1,6 @@
 #include "../include/4IsPalindrome.h"
 
+#if 0
 bool IsPalindrome(int x)
 {
 	stringstream sstr;
@@ -17,4 +18,27 @@ bool IsPalindrome(int x)
 		return true;
 	else
 		return false;
+}
+#endif
+
+
+bool IsPalindrome(int x)
+{
+	int iback = 0;
+	int y = x;
+
+	while (x > 0)
+	{
+		iback = iback * 10 + x % 10;
+		x = x / 10;
+	}
+
+	if (y == iback)
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
 }

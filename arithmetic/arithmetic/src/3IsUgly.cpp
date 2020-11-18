@@ -2,6 +2,9 @@
 
 bool IsUgly(int num)
 {
+	if (num == 1)
+		return true;
+
 	if (num == 2 || num == 3 || num == 5)
 	{
 		return true;

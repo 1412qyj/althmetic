@@ -20,6 +20,18 @@ namespace Test24
 			iOut = GetPrivateProfileIntA("test24", "Output", 0, INI_PATH);
 
 			Assert::AreEqual(iOut, LengthOfLongestSubstring(pIn));
+
+			memset(pIn, 0, MAX_PATH);
+			GetPrivateProfileStringA("test24", "Input1", "", pIn, MAX_PATH, INI_PATH);
+			iOut = GetPrivateProfileIntA("test24", "Output1", 0, INI_PATH);
+
+			Assert::AreEqual(iOut, LengthOfLongestSubstring(pIn));
+
+			memset(pIn, 0, MAX_PATH);
+			GetPrivateProfileStringA("test24", "Input2", "", pIn, MAX_PATH, INI_PATH);
+			iOut = GetPrivateProfileIntA("test24", "Output2", 0, INI_PATH);
+
+			Assert::AreEqual(iOut, LengthOfLongestSubstring(pIn));
 		}
 
 	};

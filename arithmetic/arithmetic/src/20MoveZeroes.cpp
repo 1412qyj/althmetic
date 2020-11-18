@@ -1,20 +1,37 @@
 #include "../include/20MoveZeroes.h"
 
+#if 1
+
+void MoveZeroes(vector<int> &nums)
+{
+	//分割算法，满足第三个arg的数会被移到前面去，且保持原来位置不变
+	stable_partition(nums.begin(), nums.end(), [](int num){return num != 0;});
+}
+
+#else
+
+//双指针
+//只移动非0的数
 void MoveZeroes(vector<int>& nums)
 {
-	int pos = 0;
-	int count = 0;
-	vector<int>::iterator iter;
+	if (nums.size() == 0)
+		return;
 
-	while ((iter = find(nums.begin()+pos, nums.end(), 0)) != nums.end())
-	{
-		nums.erase(iter);
+	int tmp;
+	int p = 0;//p指针永远指向0元素
+	int size = nums.size();
 
-		count++;
-
-		pos++;
+	for(int i = 0; i < size; i++)//p指针没遇到0时和l保持一致，遇到后紧跟这l
+	{//i指针用来遍历
+		if(nums[i] != 0)
+		{
+			tmp = nums[i];
+			nums[i] = nums[p];
+			nums[p++] = tmp;
+		}
 	}
 
-	while (count--)
-		nums.push_back(0);
+	return;
 }
+
+#endif

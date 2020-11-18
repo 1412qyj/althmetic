@@ -19,39 +19,6 @@ void HeadInsertNode(ListNode *pHead, int val)
 	return;
 }
 
-//void PosInsertNode(ListNode *pHead, ListNode *pNode, int pos)
-//{
-//	pos--;
-//	while (pos--)
-//	{
-//		pHead = pHead->next;
-//	}
-//
-//	pNode = pHead->next;
-//	pHead->next = pNode;
-//
-//	return;
-//}
-//
-//ListNode* popNodePos(ListNode *pHead, int pos)
-//{
-//	pos--;
-//
-//	ListNode *pMov = pHead;
-//	ListNode *pDel = NULL;
-//
-//	while (pos--)
-//	{
-//		pMov = pMov->next;
-//	}
-//
-//	pDel = pMov->next;
-//
-//	pMov = pDel->next;
-//	pMov->next = NULL;
-//
-//	return pDel;
-//}
 
 //我们称第一个大于等于x的节点为基准节点
 ListNode* Partition(ListNode* head, int x)

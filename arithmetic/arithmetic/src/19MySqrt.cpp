@@ -1,5 +1,6 @@
 #include "../include/19MySqrt.h"
 
+//¶þ·Ö·¨
 int MySqrt(int x)
 {
 	int l = 0;

@@ -14,4 +14,4 @@
 #include <sstream>
 using namespace std;
 
-#define TEST_SIZE 40
+#define TEST_SIZE MAX_PATH
