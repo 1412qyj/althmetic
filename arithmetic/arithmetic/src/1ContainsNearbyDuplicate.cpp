@@ -8,7 +8,7 @@ bool ContainsNearbyDuplicate(vector<int>& nums, int k)
 
 	for (int i = 0; i < nums.size(); i++)
 	{ 
-		if (hashmap.find(nums[i]) == hashmap.end())//如果找不到这个数，说明是第一次碰到这个数
+		if (hashmap.count(nums[i]) == 0)//如果找不到这个数，说明是第一次碰到这个数
 		{
 			hashmap.insert(pair<int, int>(nums[i], i));
 		}

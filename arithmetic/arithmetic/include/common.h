@@ -27,6 +27,13 @@ using namespace std;
 #define INI_PATH "..\\arithmetic\\config\\config.ini"
 
 
+struct TreeNode
+{
+	int val;
+	struct TreeNode *left;
+	struct TreeNode *right;
+};
+
 #ifdef __cplusplus
 extern "C"
 {
@@ -34,7 +41,7 @@ extern "C"
 	//common func
 	char * GetLanguage();
 	char * GetAuthor();
-
+	TreeNode * CreateTree(int *data, int index, int size);
 #ifdef __cplusplus
 }
 #endif

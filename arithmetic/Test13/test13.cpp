@@ -23,13 +23,14 @@ namespace Test13
 			stringstream sstr_in(p_input);
 			stringstream sstr_out(p_output);
 			
-			char ch_nums[20];
+			char ch_nums[200];
 			int num;
 
 			while (sstr_in >> ch_nums && sstr_out >> num)
 			{
 				Assert::AreEqual(num, MyAtoi(ch_nums));
 			}
+
 		}
 
 	};

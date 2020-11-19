@@ -70,6 +70,13 @@ namespace Test14
 			}
 
 			Assert::AreEqual(i_output, SingleNumber(vec));
+
+
+			//=========================================
+			vector<int> vectmp;
+			vectmp.push_back(1);
+
+			Assert::AreEqual(vectmp[0], SingleNumber(vectmp));
 		}
 
 	};

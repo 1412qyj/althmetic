@@ -4,16 +4,16 @@
 int MyAtoi(string s)
 {
 	stringstream sstr(s);
-	float ret = 0.0f;
+	long long ret = 0;
 
 	if (sstr >> ret)
 	{
-		if (ret >= INT_MAX)
+		if (ret > INT_MAX)
 		{
 			return INT_MAX;
 		}
 
-		if (ret <= INT_MIN)
+		if (ret < INT_MIN)
 		{
 			return INT_MIN;
 		}

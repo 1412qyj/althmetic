@@ -6,15 +6,10 @@
 
 #define MIN(a, b) ((a) < (b) ? (a) : (b))
 
-struct TreeNode
-{
-	int val;
-	struct TreeNode *left;
-	struct TreeNode *right;
-};
+
 
 int MinDepth(TreeNode* root);
-TreeNode * CreateTree5(int *data, int index, int size);
+
 
 #ifdef PRINT
 void prinTree(TreeNode *p_tree);

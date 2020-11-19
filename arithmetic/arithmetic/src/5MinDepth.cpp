@@ -2,6 +2,9 @@
 
 int MinDepth(TreeNode* root)
 {
+	if (root == nullptr)
+		return 0;
+
 	int ret = 0;
 
 	if (root->left == nullptr && root->right != nullptr)
@@ -28,24 +31,6 @@ int MinDepth(TreeNode* root)
 }
 
 
-TreeNode * CreateTree5(int *data, int index, int size)
-{
-	TreeNode *pnode = nullptr;
-
-	if (index > size || data[index] == -1)
-		return nullptr;
-
-	else
-	{
-		pnode = (TreeNode *)malloc(sizeof(TreeNode));
-
-		pnode->val = data[index];
-		pnode->left = CreateTree5(data, 2 * index + 1, size);
-		pnode->right = CreateTree5(data, 2 * index + 2, size);
-	}
-
-	return pnode;
-}
 
 #ifdef PRINT
 void prinTree(TreeNode *p_tree)

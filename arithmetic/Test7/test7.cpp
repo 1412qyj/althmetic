@@ -39,7 +39,7 @@ namespace Test7
 			}
 
 			//´´½¨¶þ²æÊ÷
-			TreeNode *p_tree = CreateTree7(inums, 0, size);
+			TreeNode *p_tree = CreateTree(inums, 0, size);
 
 			Assert::AreEqual(ioutput, MaxDepth(p_tree));
 

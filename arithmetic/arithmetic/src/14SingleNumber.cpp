@@ -1,21 +1,32 @@
 #include "../include/14SingleNumber.h"
 
-#if 0
+#if 1
 int SingleNumber(vector<int>& nums)
 {
-	for (int i = 0; i < nums.size(); i++)
+	unordered_map<int, int> map;
+
+	for(int i = 0; i < nums.size(); i++)
 	{
-		if(find(nums.begin()+i+1, nums.end(), nums[i]) == nums.end())
-			return nums[i];
+		if (map.find(nums[i]) == map.end())
+		{
+			map.insert(pair<int, int>(nums[i], 1));
+		}
+		else
+		{
+			map.erase(nums[i]);
+		}
 	}
 
-	return INT_MAX;
+	return map.begin()->first;
 }
 
 #else
 
 int SingleNumber(vector<int>& nums)
 {
+	if (nums.size() == 1)
+		return nums[0];
+
 	sort(nums.begin(), nums.end());
 
 	//ÅĞ¶ÏÊ×Î²µÄÖµ

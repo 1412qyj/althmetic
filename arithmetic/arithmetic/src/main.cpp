@@ -8,21 +8,36 @@
 #include "../include/21Reverse.h"
 #include "../include/1ContainsNearbyDuplicate.h"
 #include "../include/9AddBinary.h"
+#include "../include/10BinaryTreePaths.h"
+#include "../include/14SingleNumber.h"
 #endif
 
 using namespace std;
 
+void prinTree(TreeNode *p_tree)
+{
+	if (p_tree != nullptr)
+	{
+		cout << p_tree->val << endl;
 
+		prinTree(p_tree->left);
+
+		prinTree(p_tree->right);
+	}
+}
 
 int main()
 {
 
 #ifdef DEBUG
-	string s1("11");
-	string s2("100");
+	vector<int> vec;
 
+	vec.push_back(1);
 
-	cout << AddBinary(s1, s2) << endl;
+	cout << vec.size() << endl;
+
+	cout << SingleNumber(vec) << endl;
+
 #endif
 
 	system("pause");

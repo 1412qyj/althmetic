@@ -24,7 +24,7 @@ bool IsPalindrome(int x)
 
 bool IsPalindrome(int x)
 {
-	int iback = 0;
+	long iback = 0;
 	int y = x;
 
 	while (x > 0)

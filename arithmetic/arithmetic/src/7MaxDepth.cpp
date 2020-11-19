@@ -19,22 +19,5 @@ int MaxDepth(TreeNode* root)
 	return (maxl > maxr) ? (maxl+1) : (maxr+1);
 }
 
-TreeNode * CreateTree7(int *data, int index, int size)
-{
-	TreeNode *pnode = nullptr;
 
-	if (index > size || data[index] == -1)
-		return nullptr;
-
-	else
-	{
-		pnode = (TreeNode *)malloc(sizeof(TreeNode));
-
-		pnode->val = data[index];
-		pnode->left = CreateTree7(data, 2 * index + 1, size);
-		pnode->right = CreateTree7(data, 2 * index + 2, size);
-	}
-
-	return pnode;
-}
 
