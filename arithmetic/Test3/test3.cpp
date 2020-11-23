@@ -35,6 +35,12 @@ namespace Test3
 
 			flag = (strncmp(p_output, "true", 4) == 0) ? true : false;
 			Assert::AreEqual(flag, IsUgly(input));
+
+			input = GetPrivateProfileIntA("test3", "Input3", 0, INI_PATH);
+			GetPrivateProfileStringA("test3", "Output3", "", p_output, MAX_PATH, INI_PATH);
+
+			flag = (strncmp(p_output, "true", 4) == 0) ? true : false;
+			Assert::AreEqual(flag, IsUgly(input));
 		}
 
 	};

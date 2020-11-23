@@ -3,6 +3,9 @@
 
 int MyAtoi(string s)
 {
+	if (s.find_first_of('e') <= s.size())
+		s.erase(s.find_first_of('e'));
+
 	stringstream sstr(s);
 	long long ret = 0;
 

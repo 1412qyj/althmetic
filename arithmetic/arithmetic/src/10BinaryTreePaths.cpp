@@ -6,6 +6,9 @@
 vector<string> BinaryTreePaths(TreeNode* root)
 {
 	vector<string> vec_paths;
+	if (root == nullptr)
+		return vec_paths;
+
 	vector<string> vec_l, vec_r;
 	string node = "";
 	char val[12] = {'\0'};

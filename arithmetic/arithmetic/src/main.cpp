@@ -10,6 +10,7 @@
 #include "../include/9AddBinary.h"
 #include "../include/10BinaryTreePaths.h"
 #include "../include/14SingleNumber.h"
+#include "../include/13MyAtoi.h"
 #endif
 
 using namespace std;
@@ -30,13 +31,15 @@ int main()
 {
 
 #ifdef DEBUG
-	vector<int> vec;
+	string str("20000000000000000000");
 
-	vec.push_back(1);
+	stringstream sstr(str);
+	double  nums;
+	sstr >> nums;
 
-	cout << vec.size() << endl;
+	cout << nums << endl;
 
-	cout << SingleNumber(vec) << endl;
+	cout << MyAtoi(str) << endl;
 
 #endif
 

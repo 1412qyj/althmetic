@@ -3,22 +3,19 @@
 #if 1
 int Reverse(int x)
 {
-	if (x == 0)
-		return x;
+	long sum = 0;
 
-	long nums = 0L;
-
-	while (x > 0)
-	{
-		nums = nums*10 + (x % 10);
-
+	while (x != 0) {
+		sum = sum * 10 + x % 10;
 		x = x / 10;
 	}
-
-	if (int(nums) != nums)
-		return 0;
-
-	return (int)nums;
+	
+	
+	if (sum >= INT_MAX || sum <= INT_MIN)
+		sum = 0;
+	
+	
+	return sum;
 }
 
 
