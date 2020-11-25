@@ -24,16 +24,20 @@ bool IsPalindrome(int x)
 
 bool IsPalindrome(int x)
 {
-	long iback = 0;
-	int y = x;
+	int iback = 0;
 
-	while (x > 0)
+	if (x < 0 || (!(x % 10) && x != 0))
+	{
+		return false;
+	}
+
+	while (x > iback)
 	{
 		iback = iback * 10 + x % 10;
 		x = x / 10;
 	}
 
-	if (y == iback)
+	if (x == iback || iback / 10 == x)
 	{
 		return true;
 	}

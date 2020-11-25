@@ -57,6 +57,24 @@ namespace Test17
 			b_output = (strncmp(p_output, "true", 4)) ? false : true;
 
 			Assert::AreEqual(b_output, WordBreak(p_input1, vec_input2));
+
+			/*test 3*/
+			GetPrivateProfileStringA("test17", "Input5", "", p_input1, MAX_PATH, INI_PATH);
+			GetPrivateProfileStringA("test17", "Input6", "", p_input2, MAX_PATH, INI_PATH);
+			GetPrivateProfileStringA("test17", "Output2", "", p_output, MAX_PATH, INI_PATH);
+
+			sstr.clear();
+			sstr << p_input2;
+
+			vec_input2.clear();
+			while (sstr >> tmp)
+			{
+				vec_input2.push_back(tmp);
+			}
+
+			b_output = (strncmp(p_output, "true", 4)) ? false : true;
+
+			Assert::AreEqual(b_output, WordBreak(p_input1, vec_input2));
 #if 0
 
 #endif

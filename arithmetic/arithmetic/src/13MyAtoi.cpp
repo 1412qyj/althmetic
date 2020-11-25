@@ -7,7 +7,7 @@ int MyAtoi(string s)
 		s.erase(s.find_first_of('e'));
 
 	stringstream sstr(s);
-	long long ret = 0;
+	long double ret = 0;
 
 	if (sstr >> ret)
 	{

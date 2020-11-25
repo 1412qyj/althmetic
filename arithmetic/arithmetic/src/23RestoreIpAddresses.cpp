@@ -1,64 +1,56 @@
-#include "../include/23RestoreIpAddresses.h"
+ï»¿#include "../include/23RestoreIpAddresses.h"
 
-//Ä£¿éº¯Êı¹«¹²´¦ÀíµÄÊı¾İ
-static vector<string> ret;
-
-vector<string> RestoreIpAddresses(string s)
+vector<string>Â res;//æœ€åè¿”å›çš„å­—ç¬¦ä¸²ï¼Œæ‰¾åˆ°ä¸€ä¸ªé€‚åˆçš„æ•°å­—å°±æ’å…¥
+vector<string>Â RestoreIpAddresses(stringÂ s)Â 
 {
 	string cur = s;
 	int size = s.size();
 
-	Handle(size, 0, -1, cur ,s);
+	Handle(size, 0, -1, cur, s);
 
-	return ret;
+	return res;
 }
-
-//·ÖÎöipµØÖ·×Ö·û´®º¯Êı
-void Handle(int size, int pointNum, int lastPointPlace, string &cur, string &ori)
+voidÂ Handle(intÂ n, intÂ pointNum, intÂ lastPoint, string&Â cur, string&Â ori)Â 
 {
-	//ÒÑ¾­´òÁËÈı¸öµãÁË
 	if (pointNum == 3)
 	{
-		//ÅĞ¶Ï×îºóÒ»¸öÊıÖµÊÇ·ñÊÇÕıÈ·µÄ
-		if (isValid(lastPointPlace + 1, size - 1, ori))
-			ret.push_back(cur);//¼Óµ½¹«¹²Êı¾İÖĞ
+		//åˆ¤æ–­æœ€åä¸€ä¸ªæ•°å€¼æ˜¯å¦æ˜¯æ­£ç¡®çš„
+		if (Isvalid(lastPoint + 1, n - 1, ori))
+			res.push_back(cur);//åŠ åˆ°å…¬å…±æ•°æ®ä¸­
 
 		return;
 	}
-
-	//Ñ°ÕÒ´òµãµÄÎ»ÖÃ£ºÉÏÒ»¸öµãµÄºóÃæÎ»ÖÃµ½´®µÄÄ©Î²Ç°Ò»¸öÎ»ÖÃ¿ÉÒÔ´òµã
-	for (int i = lastPointPlace + 1; i < size-1; i++)
+	for (int i = lastPoint + 1; i < n - 1; i++)
 	{
-		if (isValid(lastPointPlace + 1, i, ori))
+		if (Isvalid(lastPoint + 1, i, ori))
 		{
-			//ÔÚcurÖĞ²åÈë.,Òª¼ÓÉÏµãµÄÊıÁ¿
+			//åœ¨curä¸­æ’å…¥.,è¦åŠ ä¸Šç‚¹çš„æ•°é‡
 			cur.insert(cur.begin() + i + pointNum + 1, '.');
-			Handle(size, pointNum+1, i, cur, ori);
+			Handle(n, pointNum + 1, i, cur, ori);
 
-			//»ØÍË²åÈëÖ®Ç°
+			//å›é€€æ’å…¥ä¹‹å‰
 			cur.erase(i + pointNum + 1, 1);
 		}
 	}
-
 	return;
 }
-
-//ÅĞ¶Ï´«µÄÊıÊÇ·ñ·ûºÏÒªÇó
-bool isValid(int firstPlace, int lastPlace, string &s)
+bool Isvalid(int firstPlace, int lastPlace, string &s)
 {
 	int sum = 0;
 
 	for (int i = firstPlace; i <= lastPlace; i++)
 	{
-		//µ±ÆäÖĞµÄ·ÇÒ»Î»ÊıµÚÒ»Î»ÊÇ0Ê±
+		//å½“å…¶ä¸­çš„éä¸€ä½æ•°ç¬¬ä¸€ä½æ˜¯0æ—¶
 		if (s[firstPlace] == '0' && firstPlace != lastPlace)
 			return false;
 
 		sum = sum * 10 + s[i] - '0';
+
+		if (sum > 255)
+			return false;
 	}
 
-	if (sum > 255)
-		return false;
+
 
 	return true;
 }

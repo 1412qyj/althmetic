@@ -1,6 +1,6 @@
 #include "../include/17WordBreak.h"
 
-#if 1
+#if 0
 bool WordBreak(string s, vector<string>& wordDict)
 {
 	if (find(wordDict.begin(), wordDict.end(), s) != wordDict.end())
@@ -22,27 +22,21 @@ bool WordBreak(string s, vector<string>& wordDict)
 #else
 bool WordBreak(string s, vector<string>& wordDict)
 {
-	int l = 0;//左pos
-	int r = 1;//右pos
+	unordered_set<string> wordDictSet (wordDict.begin(), wordDict.end());
+	vector<bool> dp(s.size()+1);
 	
-	while (!s.empty())
-	{
-		//此时找到的r是这个单词的后一个位置
-		if (find(wordDict.begin(), wordDict.end(), s.substr(l, r)) != wordDict.end())
-		{
-			//找到就擦除
-			s.erase(0, r);
-			r = 1;
-			continue;
+	dp[0] = true;
+	for (int i = 1; i <= s.size(); ++i) {
+		for (int j = 0; j < i; ++j) {
+			if (dp[j] && wordDictSet.find(s.substr(j, i - j)) != wordDictSet.end()) {
+				dp[i] = true;
+				break;
+			}
 		}
-
-		if (r == s.size())
-			break;
-
-		r++;
 	}
-
-	return s.empty();
+	for (vector<bool>::iterator iter = dp.begin(); iter != dp.end(); iter++)
+		cout << *iter << endl;
+	return dp[s.size()];
 }
 
 #endif

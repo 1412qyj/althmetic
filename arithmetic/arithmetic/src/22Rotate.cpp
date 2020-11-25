@@ -5,7 +5,7 @@
 
 void Rotate(vector<int>& nums, int k)
 {
-	std::rotate(nums.begin(), nums.begin() + k+1, nums.end());
+	std::rotate(nums.begin(), nums.end() - k%nums.size(), nums.end());
 }
 
 #else

@@ -3,6 +3,8 @@
 //¶þ·Ö·¨
 int MySqrt(int x)
 {
+	if (x == 0 || x == 1)
+		return x;
 	int l = 0;
 	int r = x;
 	int mid = 0;
@@ -12,7 +14,7 @@ int MySqrt(int x)
 	{
 		mid = l + (r - l) / 2;
 
-		if (mid * mid <= x)
+		if (mid <= x / mid)
 		{
 			l = mid + 1;
 
@@ -26,3 +28,6 @@ int MySqrt(int x)
 
 	return ret;
 }
+
+
+

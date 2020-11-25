@@ -2,6 +2,9 @@
 
 int MaxDepth(TreeNode* root)
 {
+	if (root == nullptr)
+		return 0;
+
 	int maxl = 0;
 	int maxr = 0;
 

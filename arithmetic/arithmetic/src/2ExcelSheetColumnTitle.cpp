@@ -1,5 +1,6 @@
 #include "../include/2ExcelSheetColumnTitle.h"
 
+#if 0
 string ExcelSheetColumnTitle(int n)
 {
 	string strRet("");
@@ -26,4 +27,17 @@ string ExcelSheetColumnTitle(int n)
 
 	return strRet;
 }
+#endif
 
+
+string ExcelSheetColumnTitle(int n)
+{
+	string ret("");
+
+	if (n > 26)
+		ret += ExcelSheetColumnTitle((n-1)/26);
+
+	ret += 'A' + (n - 1) % 26;
+
+	return ret;
+}
