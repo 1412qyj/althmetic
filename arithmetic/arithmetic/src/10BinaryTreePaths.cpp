@@ -1,8 +1,5 @@
 #include "../include/10BinaryTreePaths.h"
 
-#if 0
-
-#else
 vector<string> BinaryTreePaths(TreeNode* root)
 {
 	vector<string> vec_paths;
