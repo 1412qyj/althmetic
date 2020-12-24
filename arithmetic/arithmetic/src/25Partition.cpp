@@ -1,28 +1,24 @@
 #include "../include/25Partition.h"
 
-void HeadInsertNode(ListNode *pHead, int val)
+void CreateList(struct ListNode* L, vector<int> nums)
 {
-	ListNode *pNode = new ListNode(val);
-
-	if (pHead->next == NULL)
+	int i = 0;
+	for (i = 0; i < nums.size(); i++)
 	{
-		pHead->next = pNode;
-		pHead->val++;
-		return;
+		ListNode *p = (ListNode*)malloc(sizeof(struct ListNode));
+		p->val = nums[i];
+		p->next = nullptr;
+		L->next = p;
+		L = L->next;
 	}
-
-	pNode->next = pHead->next;
-	pHead->next = pNode;
-
-	pHead->val++;
 
 	return;
 }
 
-
 //我们称第一个大于等于x的节点为基准节点
 ListNode* Partition(ListNode* head, int x)
 {
+#if 1
 	auto q = head;
 	auto p = head;
 	int tmp;
@@ -42,5 +38,31 @@ ListNode* Partition(ListNode* head, int x)
 	}
 
 	return head;
+#else
 
+	ListNode* befor = new ListNode(0);
+	ListNode* after = new ListNode(0);
+	ListNode* p1 = befor;
+	ListNode* p2 = after;
+	if (head->next == nullptr)
+		return head;
+	while (head != nullptr)
+	{
+		if (head->val < x)
+		{
+			p1->next = head;
+			p1 = p1->next;
+			head = head->next;
+		}
+		else
+		{
+			p2->next = head;
+			p2 = p2->next;
+			head = head->next;
+		}
+	}
+	p2->next = nullptr;
+	p1->next = after->next;
+	return befor->next;
+#endif
 }

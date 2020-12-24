@@ -5,6 +5,8 @@
 using namespace std;
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
+#define INI_PATH "../arithmetic/config/config_test25.ini"
+
 namespace Test25
 {		
 	TEST_CLASS(UnitTest1)
@@ -14,57 +16,59 @@ namespace Test25
 		TEST_METHOD(Test25)
 		{
 			// TODO:  在此输入测试代码
-			char *pIn = new char[MAX_PATH];
-			char *pOut = new char[MAX_PATH];
-
-			GetPrivateProfileStringA("test25", "Input", "", pIn, MAX_PATH, INI_PATH);
-			GetPrivateProfileStringA("test25", "Output", "", pOut, MAX_PATH, INI_PATH);
-			int iKey = GetPrivateProfileIntA("test25", "Key", 0, INI_PATH);
-
-			stringstream sstrIn;
-			stringstream sstrOut;
-			vector<int> vecIn;
-			vector<int> vecOut;
-			int tmp;
-
-			sstrIn << pIn;
-			sstrOut << pOut;
-
-			while (sstrIn >> tmp)
-			{
-				vecIn.push_back(tmp);
-			}
-			while (sstrOut >> tmp)
-			{
-				vecOut.push_back(tmp);
-			}
-
-			//创建头节点
-			ListNode *pHead = new ListNode(0);//头节点的数字是链表的总长度
-
-			//循环头插， 因为头插数据会反，所以我们将数据反向头插
-			vector<int>::reverse_iterator iter;
-
-			for (iter = vecIn.rbegin(); iter != vecIn.rend(); iter++)
-			{
-				tmp = *iter;
-				HeadInsertNode(pHead, *iter);
-			}
-
-			ListNode *pRet = Partition(pHead, iKey);
-
-			vector<int> vecRet;
-
-			pHead = pHead->next;
-			while (pHead)
-			{
-				vecRet.push_back(pHead->val);
-				pHead = pHead->next;
-			}
-
-			bool bResult = (vecRet == vecOut) ? true : false;
+			int i = 0;//辅助数
+			int ini_key = 0; //ini文件的k
+			int val = 0; 
+			int j = 0;
+			int array[1000];
+			bool result = false;
 			
-			Assert::IsTrue(bResult);
+			//获取一共有多少个[章节]数
+			int ini_Numbers = GetPrivateProfileIntA("config_test25", "number", 0, INI_PATH);
+
+			for (i = 1; i <= ini_Numbers; i++)
+			{
+				result = false;
+				char sectionName[15] = { "Test" }, sectionCount[10], ini_arrays[1024], ini_out[1024];
+				itoa(i, sectionCount, 10);
+				strcat(sectionName, sectionCount);
+				ini_key = GetPrivateProfileIntA(sectionName, "k", 0, INI_PATH);
+				GetPrivateProfileStringA(sectionName, "array", "", ini_arrays, sizeof(ini_arrays), INI_PATH);
+				char *p_ini_arrays = strtok(ini_arrays, ",");
+				while (p_ini_arrays != NULL)
+				{
+					val = atoi(p_ini_arrays);
+					array[j] = val;
+					j++;
+					p_ini_arrays = strtok(NULL, ",");
+				}
+				vector<int> nums(array, array + j);
+				j = 0;
+				struct ListNode* head = (struct ListNode*)malloc(sizeof(struct ListNode));  //头结点(不存值)
+				head->next = NULL;
+				CreateList(head, nums);
+				ListNode* head1 = Partition(head, ini_key);
+				vector<int> array_act;
+				vector<int> array_out;
+				head1 = head1->next;
+				while (head1 != nullptr)
+				{
+					array_act.push_back(head1->val);
+					head1 = head1->next;
+				}
+				GetPrivateProfileStringA(sectionName, "output", "", ini_out, sizeof(ini_out), INI_PATH);
+				char *p_ini_arrays5 = strtok(ini_out, ",");
+				while (p_ini_arrays5 != NULL)
+				{
+					array_out.push_back(atoi(p_ini_arrays5));
+					p_ini_arrays5 = strtok(NULL, ",");
+				}
+				if (array_out == array_act)
+					result = true;
+				array_act.clear();
+				array_out.clear();
+				Assert::IsTrue(result);
+			}
 		}
 
 	};

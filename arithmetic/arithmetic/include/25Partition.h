@@ -9,6 +9,6 @@ struct ListNode
 	ListNode(int x) : val(x), next(NULL) {}
 };
 
-void HeadInsertNode(ListNode *pHead, int val);
+void CreateList(struct ListNode*, vector<int>);
 ListNode* Partition(ListNode* head, int x);
 #endif

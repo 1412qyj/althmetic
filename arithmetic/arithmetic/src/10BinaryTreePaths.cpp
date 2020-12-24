@@ -48,7 +48,6 @@ vector<string> BinaryTreePaths(TreeNode* root)
 
 	return vec_paths;
 }
-#endif
 
 
 
