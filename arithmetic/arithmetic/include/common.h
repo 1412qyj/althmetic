@@ -24,8 +24,6 @@
 #include <unordered_set>
 using namespace std;
 
-//define
-#define INI_PATH "..\\arithmetic\\config\\config.ini"
 
 
 struct TreeNode
